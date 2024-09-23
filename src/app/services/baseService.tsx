@@ -1,7 +1,7 @@
 import axios from "axios";
 import { response } from "express";
 
-export const api_url = "http://localhost:8081";
+export const api_url = "https://crm-server-2wx3.onrender.com";
 
 export const post = async (moduleName: string, data: any) => {
     try {

@@ -133,9 +133,7 @@ const SideBar = () => {
           <React.Fragment key={id}>
             <Styles.Button
               isPressed={
-                pathname === url || subButtonsURLs?.includes(pathname)
-                  ? true
-                  : false
+                !!(pathname === url || subButtonsURLs?.includes(pathname))
               }
             >
               <LinkButton link={url} name={buttonName} />
